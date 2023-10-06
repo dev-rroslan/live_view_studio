@@ -34,7 +34,7 @@ defmodule LiveViewStudioWeb.WrongLive do
     
     if String.to_integer(guess) == socket.assigns.answer do
       {
-        "Your guess: #{guess}. You guess right! You won 5 points. New number generated.",
+        "Your guess: #{guess}. You guess right! You won 5 points. New random number generated.",
         socket.assigns.score + 5,
         random_number()
       }

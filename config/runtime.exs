@@ -101,9 +101,10 @@ if config_env() == :prod do
   # Also, you may need to configure the Swoosh API client of your choice if you
   # are not using SMTP. Here is an example of the configuration:
   #
-  #     config :live_view_studio, LiveViewStudio.Mailer,
-  #       adapter: Swoosh.Adapters.Mailgun,
-  #       api_key: System.get_env("MAILGUN_API_KEY"),
+  config :live_view_studio, LiveViewStudio.Mailer,
+    adapter: Swoosh.Adapters.Sendinblue,
+    api_key: System.get_env("SENDINBLUE_API_KEY"),
+    from_email: System.get_env("SENDINBLUE_FROM_EMAIL")
   #       domain: System.get_env("MAILGUN_DOMAIN")
   #
   # For this example you need include a HTTP client required by Swoosh API client.

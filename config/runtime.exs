@@ -105,8 +105,7 @@ if config_env() == :prod do
     adapter: Swoosh.Adapters.Sendinblue,
     api_key: System.get_env("SENDINBLUE_API_KEY"),
     from_email: System.get_env("SENDINBLUE_FROM_EMAIL"),
-    from_name: System.get_env("SENDINBLUE_FROM_NAME"),
-    region: System.get_env("SENDINBLUE_REGION")
+    from_name: System.get_env("SENDINBLUE_FROM_NAME")
   
   #
   # For this example you need include a HTTP client required by Swoosh API client.

@@ -104,7 +104,7 @@ if config_env() == :prod do
   config :live_view_studio, LiveViewStudio.Mailer,
     adapter: Swoosh.Adapters.Sendinblue,
     api_key: System.get_env("SENDINBLUE_API_KEY"),
-  #       domain: System.get_env("MAILGUN_DOMAIN")
+    from_email: System.get_env("SENDINBLUE_FROM_EMAIL")
   #
   # For this example you need include a HTTP client required by Swoosh API client.
   # Swoosh supports Hackney and Finch out of the box:

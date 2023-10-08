@@ -81,7 +81,7 @@ config :phoenix, :plug_init_mode, :runtime
 
 
 config :live_view_studio, LiveViewStudio.Mailer,
-    adapter: Swoosh.Adapters.Brevo,
+    adapter: Swoosh.Adapters.Sendinblue,
     api_key: System.get_env("SENDINBLUE_API_KEY")
     
 config :swoosh, :api_client, Swoosh.ApiClient.Finch

@@ -80,11 +80,7 @@ config :phoenix, :plug_init_mode, :runtime
 #config :swoosh, :api_client, false
 
 
-config :live_view_studio, LiveViewStudio.Mailer,
-    adapter: Swoosh.Adapters.Sendinblue,
-    api_key: System.get_env("SENDINBLUE_API_KEY")
-    
-config :swoosh, :api_client, Swoosh.ApiClient.Finch
+
   
   #
   # For this example you need include a HTTP client required by Swoosh API client.
